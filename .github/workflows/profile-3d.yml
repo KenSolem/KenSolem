@@ -1,7 +1,7 @@
 name: GitHub-Profile-3D-Contrib
 
 on:
-  schedule: # 03:00 JST == 18:00 UTC
+  schedule:
     - cron: "0 18 * * *"  # Ajusta el horario según tu preferencia
   workflow_dispatch:
 
@@ -10,15 +10,12 @@ jobs:
     runs-on: ubuntu-latest
     name: generate-github-profile-3d-contrib
     steps:
-      - uses: actions/checkout@v3
-
-      # Configuración de Node.js dentro del paso "Setup Node.js"
+      - uses: actions/checkout@v4  # Actualizado a v4
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 16  
-
-      - uses: yoshi389111/github-profile-3d-contrib@0.7.1
+          node-version-file: '.node-version'  # Utiliza el archivo .node-version
+      - uses: yoshi389111/github-profile-3d-contrib@0.7.1  # Reemplazar si hay una versión actualizada
         env:
           GITHUB_TOKEN: ${{ secrets.PERFIL_GITHUB_TOKEN }}
           USERNAME: KenSolem 
