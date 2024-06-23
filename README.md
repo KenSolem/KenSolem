@@ -2,7 +2,7 @@
 
 **Dirigente Social en Formación de Informática** 💻 
 
-<a href="https://www.linkedin.com/in/gonzalo-lemus-lemus-ba467177/" target="_blank"><img src="./images/banner.jpeg" 
+<a href="https://www.linkedin.com/in/gonzalo-lemus-lemus-ba467177/" target="_blank"><img src="./images/banner.jpg" 
    borderRadius='1rem' boxShadow = '0 5px 18px rgba(0,0,0,0.3)'></a>
 </p>
 
